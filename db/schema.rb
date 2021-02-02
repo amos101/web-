@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20210126023717) do
+ActiveRecord::Schema.define(version: 20210131124652) do
 
   create_table "likes", force: :cascade do |t|
     t.integer  "user_id"

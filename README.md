@@ -1,24 +1,38 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#Webapp
 
-Things you may want to cover:
 
-* Ruby version
+URL
+*https://shrouded-lowlands-85206.herokuapp.com/
 
-* System dependencies
+#概要
+ユーザー登録ができて投稿機能のあるSNSアプリです。気に入った投稿には『いいね！』することもできます。
+初めてのポートフォリオサイトになります。
 
-* Configuration
+#制作背景
+ポートフォリオを通して、フロントエンドからバックエンド、インフラについて知見を増やしたく思い作成しました。
+アプリケーションをHeroku上のサーバーにデプロイしました。
 
-* Database creation
+#機能一覧
 
-* Database initialization
+*ユーザー作成・編集
 
-* How to run the test suite
+*いいね
 
-* Services (job queues, cache servers, search engines, etc.)
+*投稿機能
 
-* Deployment instructions
+#言語・使用技術
 
-* ...
+バックエンド
+*ruby 2.6.3
+
+フロントエンド
+*HTML
+*CSS
+
+インフラ
+*heroku
+*sqlite3
+*PostgreSQL
+

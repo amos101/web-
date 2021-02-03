@@ -4,7 +4,7 @@
 
 
 URL
-*https://shrouded-lowlands-85206.herokuapp.com/
+https://nameless-basin-49101.herokuapp.com/
 
 #概要
 ユーザー登録ができて投稿機能のあるSNSアプリです。気に入った投稿には『いいね！』することもできます。
@@ -33,6 +33,5 @@ URL
 
 インフラ
 *heroku
-*sqlite3
 *PostgreSQL
 

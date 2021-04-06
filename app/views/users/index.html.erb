@@ -1,6 +1,8 @@
 <div class="main users-index">
   <div class="container">
     <h1 class="users-heading">ユーザー一覧</h1>
+    <%= link_to "CSVダウンロード", users_index_path(format: :csv) %>
+    
     <% @users.each do |user| %>
       <div class="users-index-item">
         <div class="user-left">
@@ -8,6 +10,7 @@
         </div>
         <div class="user-right">
           <%= link_to(user.name, "/users/#{user.id}") %>
+          
         </div>
       </div>
     <% end %>

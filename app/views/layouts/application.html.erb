@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>webアプリ</title>
+    <title>語学日記アプリ</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,16 +15,22 @@
     <header>
       <div class="header-logo">
         <% if @current_user %>
-         <%= link_to("webアプリ","/posts/index")%>
+         <%= link_to("語学日記アプリ","/posts/index")%>
         <% else %>
-         <%= link_to("webアプリ","/")%>
+         <%= link_to("語学日記アプリ","/")%>
         <% end %> 
       </div>
+      
+
       <ul class="header-menus">
 
       <% if @current_user %>
         <li>
           <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+        </li>
+
+        <li>
+          <%=  link_to("タイピングゲーム","/typing/top")%>
         </li>
         
         <li>
@@ -41,7 +47,10 @@
         </li>
       <% else %>
         <li>
-          <%= link_to("webアプリ","/about")%>
+          <%= link_to("語学日記アプリについて","/about")%>
+        </li>
+        <li>
+          <%=  link_to("タイピングゲーム","/typing/top")%>
         </li>
         <li>
           <%= link_to("新規登録","/signup") %>

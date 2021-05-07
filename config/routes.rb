@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+  get 'typing/top'
+
   root 'home#top'
+  
   post "likes/:post_id/create" => "likes#create"
   post "likes/:post_id/destroy" => "likes#destroy"
 
+  get "typing/top" => "typing#top"
   post "users/:id/update" => "users#update"
   get "users/:id/edit" => "users#edit"
   post "users/create" => "users#create"

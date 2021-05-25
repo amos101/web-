@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  devise_for :users, controllers: {
+  omniauth_callbacks: "omniauth_callbacks"
+  }
   get 'typing/top'
 
   root 'home#top'
@@ -30,4 +34,6 @@ Rails.application.routes.draw do
 
   get "/" => "home#top"
   get "about" => "home#about"
+
+  
 end

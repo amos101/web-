@@ -15,7 +15,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '0a37f46b8a41f5e942e8eea81f23ee02c247f5efd4d9c16dea2d7e92133ac5968c3173e26c72fe45953c83c2c85910300ec2b2dc5be3694b69551aaffcc605ed'
-  config.omniauth :line, ENV['LINE_KEY'], ENV['LINE_SECRET']
+  config.omniauth :line, ENV['LINE_KEY'], ENV['LINE_SECRET'],callback_url:"https://limitless-woodland-49387.herokuapp.com/users/auth/line/callback"
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'

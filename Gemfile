@@ -8,6 +8,8 @@ gem 'rails', '~> 5.0.0'
 gem 'dotenv-rails'
 gem 'devise'
 gem 'omniauth-line'
+gem 'omniauth', '~> 1.9.1'
+gem 'omniauth-rails_csrf_protection'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
